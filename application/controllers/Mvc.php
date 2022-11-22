@@ -11,8 +11,7 @@ class Mvc extends CI_Controller {
 
     public function index()
     {
-        $result = $this->mvc_model->getAggregasi();
-        print_r($result);
-
+        $data['data'] = $this->mvc_model->getAggregasi();
+        $this->load->view('mvc', $data);
     }
 }
