@@ -10,12 +10,12 @@ class mvc_model extends CI_Model {
 
     public function getAggregasi()
     {   
-    $query = "SELECT category, count(*)
+    $query = "SELECT category, count(*) as count
             FROM data, kategori 
             WHERE data.kategori_id = kategori.id
             GROUP BY category"; 
     $result = $this->db->query($query);
-    return $result->result_array();
+    return $result->result();
 }
 
 }
