@@ -131,6 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</code>
 
 		<p>Test 3</p>
+		<p>Hasil test 3 : <a href="http://localhost/dev-test/index.php/mvc">Disini</a></p>
 		<code>
 			<b>Problem : </b><br>
 			MVC:<br>
